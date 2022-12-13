@@ -11,7 +11,7 @@ builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 // sqlite
 builder.Services.AddSingleton(new DatabaseConfig { Name = builder.Configuration.GetValue<string>("DatabaseName", "Data Source=database.sqlite") });
-builder.Services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
+builder.Services.AddSingleton<IDatabaseBanco, DatabaseBanco>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -34,7 +34,7 @@ app.MapControllers();
 
 // sqlite
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
-app.Services.GetService<IDatabaseBootstrap>().Setup();
+app.Services.GetService<IDatabaseBanco>().Setup();
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
 app.Run();

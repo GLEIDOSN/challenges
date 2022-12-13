@@ -35,10 +35,9 @@
     <Folder Include="Application\Commands\Requests\" />
     <Folder Include="Application\Commands\Responses\" />
     <Folder Include="Application\Handlers\" />
+    <Folder Include="Application\Controllers\" />
     <Folder Include="Application\Queries\Requests\" />
     <Folder Include="Application\Queries\Responses\" />
-    <Folder Include="Domain\Entities\" />
-    <Folder Include="Domain\Enumerators\" />
     <Folder Include="Domain\Language\" />
     <Folder Include="Infrastructure\Database\CommandStore\Requests\" />
     <Folder Include="Infrastructure\Database\CommandStore\Responses\" />
